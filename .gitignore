@@ -1,0 +1,13 @@
+.DS_STORE
+node_modules/
+build/
+dist/
+*.log*
+.vscode
+*.swp
+*.swo
+
+# TypeScript
+/test-results/
+/playwright-report/
+/playwright/.cache/
