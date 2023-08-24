@@ -1,0 +1,7 @@
+[data-sandbox-heart] {
+  transition: transform 50ms;
+
+  &:active {
+    transform: scale(1.05);
+  }
+}

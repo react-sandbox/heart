@@ -1,6 +1,10 @@
+import { useState } from 'react'
 import Head from 'next/head'
+import Heart from '@react-sandbox/heart'
 
 export default function Home() {
+  const [active, setActive] = useState(false)
+
   return (
     <>
       <Head>
@@ -9,7 +13,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main>{/* TODO */}</main>
+      <main>
+        <Heart
+          width={64}
+          height={64}
+          active={active}
+          onClick={() => setActive(!active)}
+        />
+      </main>
     </>
   )
 }
