@@ -17,6 +17,7 @@ export default function Heart({
     <svg
       data-sandbox-heart
       viewBox="0 0 612 792"
+      tabIndex={0}
       width={width}
       height={height}
       fill={active ? activeColor : 'transparent'}

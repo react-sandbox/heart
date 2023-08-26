@@ -4,4 +4,9 @@
   &:active {
     transform: scale(1.05);
   }
+
+  /* https://css-tricks.com/the-focus-visible-trick/ */
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
 }
