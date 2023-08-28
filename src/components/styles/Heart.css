@@ -1,6 +1,4 @@
 [data-sandbox-heart] {
-  cursor: pointer;
-
   &:focus:not(:focus-visible) {
     outline: none;
   }

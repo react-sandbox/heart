@@ -6,6 +6,7 @@ export interface HeartProps {
   activeColor?: string
   inActiveColor?: string
   strokeWidth?: number
+  disabled?: boolean
   className?: string
   style?: React.CSSProperties
 }

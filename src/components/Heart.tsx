@@ -10,11 +10,18 @@ export default function Heart({
   activeColor = '#ff0000',
   inActiveColor = '#121212',
   strokeWidth = 30,
+  disabled = false,
   className,
   style
 }: HeartProps) {
+  const handleClick = () => {
+    if (!disabled) {
+      onClick()
+    }
+  }
+
   const handleKeyUp = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'Enter') {
+    if (!disabled && e.key === 'Enter') {
       onClick()
     }
   }
@@ -23,14 +30,15 @@ export default function Heart({
     <div
       data-sandbox-heart
       role="button"
-      tabIndex={0}
-      onClick={onClick}
+      tabIndex={disabled ? -1 : 0}
+      onClick={handleClick}
       onKeyUp={e => handleKeyUp(e)}
       className={className}
       style={{
         width,
         height,
         outlineColor: inActiveColor,
+        cursor: disabled ? 'default' : 'pointer',
         ...style
       }}
     >
