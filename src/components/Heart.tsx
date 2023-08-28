@@ -28,6 +28,8 @@ export default function Heart({
       onKeyUp={e => handleKeyUp(e)}
       className={className}
       style={{
+        width,
+        height,
         outlineColor: inActiveColor,
         ...style
       }}
