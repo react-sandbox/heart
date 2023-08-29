@@ -15,8 +15,8 @@ export default function Home() {
 
       <main>
         <Heart
-          width={64}
-          height={64}
+          width={84}
+          height={84}
           active={active}
           onClick={() => setActive(!active)}
         />
