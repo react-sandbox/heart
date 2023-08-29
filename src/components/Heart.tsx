@@ -8,7 +8,7 @@ export default function Heart({
   width,
   height,
   activeColor = '#ff0000',
-  inActiveColor = '#121212',
+  inactiveColor = '#121212',
   strokeWidth = 30,
   disabled = false,
   className,
@@ -47,7 +47,7 @@ export default function Heart({
         width={width}
         height={height}
         fill={active ? activeColor : 'transparent'}
-        stroke={active ? activeColor : inActiveColor}
+        stroke={active ? activeColor : inactiveColor}
         strokeWidth={strokeWidth}
         className={`${active ? 'animate' : ''}`}
       >

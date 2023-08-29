@@ -1,10 +1,10 @@
 export interface HeartProps {
+  width: number
+  height: number
   active: boolean
   onClick: () => void
-  width?: number
-  height?: number
   activeColor?: string
-  inActiveColor?: string
+  inactiveColor?: string
   strokeWidth?: number
   disabled?: boolean
   className?: string
