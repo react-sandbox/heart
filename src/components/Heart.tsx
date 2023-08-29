@@ -35,9 +35,9 @@ export default function Heart({
       onKeyUp={e => handleKeyUp(e)}
       className={className}
       style={{
+        cursor: disabled ? 'default' : 'pointer',
         width,
         height,
-        cursor: disabled ? 'default' : 'pointer',
         ...style
       }}
     >
