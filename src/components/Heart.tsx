@@ -37,7 +37,6 @@ export default function Heart({
       style={{
         width,
         height,
-        outlineColor: inActiveColor,
         cursor: disabled ? 'default' : 'pointer',
         ...style
       }}
