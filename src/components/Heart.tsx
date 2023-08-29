@@ -3,10 +3,10 @@ import { HeartProps } from '../types/Heart'
 import './styles/Heart.css'
 
 export default function Heart({
-  active,
-  onClick,
   width,
   height,
+  active,
+  onClick,
   activeColor = '#ff0000',
   inactiveColor = '#121212',
   strokeWidth = 30,

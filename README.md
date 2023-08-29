@@ -48,12 +48,12 @@ function App() {
 | --------------- | --------------------- | ------------ | ----------------------- |
 | `width`         | `number`              | **required** | Heart width             |
 | `height`        | `number`              | **required** | Heart height            |
-| `active`        | `boolean`             | **required** | Heart activity          |
+| `active`        | `boolean`             | **required** | Heart fill & animation  |
 | `onClick`       | `function`            | **required** | Click callback function |
 | `activeColor`   | `string`              | `'#ff0000'`  | Active color            |
 | `inactiveColor` | `string`              | `'#121212'`  | Inactive color          |
 | `strokeWidth`   | `number`              | `30`         | Outline stroke width    |
-| `disabled`      | `boolean`             | `false`      | Disable button usage    |
+| `disabled`      | `boolean`             | `false`      | Disable usage           |
 | `className`     | `string`              | `-`          | CSS classes             |
 | `style`         | `React.CSSProperties` | `-`          | CSS styles              |
 
