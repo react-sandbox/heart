@@ -11,6 +11,7 @@ export default function Heart({
   inactiveColor = '#121212',
   strokeWidth = 30,
   disabled = false,
+  ariaLabel = 'Like',
   className,
   style
 }: HeartProps) {
@@ -30,9 +31,11 @@ export default function Heart({
     <div
       data-sandbox-heart
       role="button"
+      aria-label={ariaLabel}
+      aria-pressed={active}
       tabIndex={disabled ? -1 : 0}
       onClick={handleClick}
-      onKeyUp={e => handleKeyUp(e)}
+      onKeyUp={handleKeyUp}
       className={className}
       style={{
         cursor: disabled ? 'default' : 'pointer',

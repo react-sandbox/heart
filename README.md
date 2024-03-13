@@ -61,6 +61,7 @@ function App() {
 | `inactiveColor` | `string`              | `'#121212'`  | Inactive color          |
 | `strokeWidth`   | `number`              | `30`         | Outline stroke width    |
 | `disabled`      | `boolean`             | `false`      | Disable usage           |
+| `ariaLabel`     | `string`              | `'Like'`     | Accessibility label     |
 | `className`     | `string`              | `-`          | CSS classes             |
 | `style`         | `React.CSSProperties` | `-`          | CSS styles              |
 
