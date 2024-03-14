@@ -43,6 +43,5 @@
   "peerDependencies": {
     "react": "^16.8 || ^17.0 || ^18.0",
     "react-dom": "^16.8 || ^17.0 || ^18.0"
-  },
-  "packageManager": "pnpm@8.6.12"
+  }
 }
